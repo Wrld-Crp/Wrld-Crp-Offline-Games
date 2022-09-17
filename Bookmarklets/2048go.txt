@@ -1,0 +1,1 @@
+javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/Browncha023/2048go@v2.0.1/script.min.js';document.body.appendChild(a);}())

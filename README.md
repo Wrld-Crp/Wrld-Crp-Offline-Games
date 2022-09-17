@@ -1,2 +1,2 @@
 # Wrld-Crp-Offline-Games
-Main
+To play the games open the .html file (note that not every .html file will work)

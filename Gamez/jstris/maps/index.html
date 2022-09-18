@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="HSocHcP3kvQVD6xjnITEcdIBAEZwgQB1oSyX05aP">
+    <title>Jstris</title>
+    <link media="all" rel="stylesheet" href="asset/css/main.css">
+    <link rel="shortcut icon" href="../../images/nklogo-icon.ico">
+    <meta name="description" content="Online multiplayer puzzle game">
+    <script>window.Laravel = {"csrfToken":"HSocHcP3kvQVD6xjnITEcdIBAEZwgQB1oSyX05aP"}</script>
+    <script defer src="asset/js/app.js"></script>
+    <script async src="asset/js/ga.js"></script>
+    <script src="asset/js/maps-list.js"></script>
+    <script src="asset/js/maps.js"></script>
+</head>
+<body>
+<div id="app">
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+<span class="sr-only">Toggle Navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/jstris">
+    jstris.jezevec10.com offline
+</a>
+</div>
+<div class="collapse navbar-collapse" id="app-navbar-collapse">
+<ul class="nav navbar-nav" id="mnav">
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Play <span class="caret"></span></a>
+<ul class="dropdown-menu plLinks" role="menu">
+<li><a href="/jstris//">Live</a></li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstris//play/sprint" id="plH">Sprint</a>
+<ul class="dropdown-menu">
+<li><a id="pl2" href="/jstris//play/sprint/20">20L</a></li>
+<li><a id="pl3" href="/jstris//play/sprint/40">40L</a></li>
+<li><a id="pl4" href="/jstris//play/sprint/100">100L</a></li>
+<li><a id="pl5" href="/jstris//play/sprint/1000">1000L</a></li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstris//play/cheeseRace" id="plI">Cheese race</a>
+<ul class="dropdown-menu">
+<li><a id="pl6" href="/jstris//play/cheeseRace/10">10L</a></li>
+<li><a id="pl7" href="/jstris//play/cheeseRace/18">18L</a></li>
+<li><a id="pl8" href="/jstris//play/cheeseRace/100">100L</a></li>
+</ul>
+</li>
+<li><a href="/jstris/maps">Map downstack</a></li>
+<li><a id="pl9" href="/jstris//play/survival">Survival</a></li>
+<li><a id="plA" href="/jstris//play/ultra">Ultra</a></li>
+<li><a id="plB" href="/jstris//play/20TSD">20TSD</a></li>
+<li><a id="plC" href="/jstris//play/PC">PC Mode</a></li>
+<li><a id="plD" href="/jstris//play/practice">Practice</a></li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstris/#">Rulesets</a>
+<ul class="dropdown-menu">
+<li><a id="plE" href="/jstris//play/big">Big mode</a></li>
+<li><a id="plF" href="/jstris//play/pentomino">Pentomino</a></li>
+<li><a id="plG" href="/jstris//play/MPH">MPH</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="/jstris/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Leaderboard <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class=""><a href="/jstris/sprint">Sprint</a></li>
+<li class=""><a href="/jstris/cheese">Cheese race</a></li>
+<li class=""><a href="/jstris/survival">Survival</a></li>
+<li class=""><a href="/jstris/ultra">Ultra</a></li>
+<li class=""><a href="/jstris/20TSD">20TSD</a></li>
+<li class=""><a href="/jstris/PC-mode">PC Mode</a></li>
+</ul>
+</li>
+<li class="dropdown active">
+<a href="/jstris/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class="active"><a href="/jstris/maps">Browse</a></li>
+<li><a href="/jstris/maps/random">Random map</a></li>
+<li class=""><a href="/jstris/maps/create">Map Designer</a></li>
+<li class=""><a href="/jstris/maps/games">Latest games</a></li>
+<li class=""><a href="/jstris/maps/leaderboard">Leaderboard</a></li>
+</ul>
+</li>
+<li class="">
+<a href="/jstris/about">About</a>
+</li>
+<li class="">
+<a href="/jstris/donate">Donate</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="/jstris/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+en <span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/jstris/maps?langSwitch=en" hreflang="en">en
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=cs" hreflang="cs">cs
+<span class="cinf">78%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=da" hreflang="da">da
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=de" hreflang="de">de
+<span class="cinf">79%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=es" hreflang="es">es
+<span class="cinf">99%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=fi" hreflang="fi">fi
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=fr" hreflang="fr">fr
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=ga" hreflang="ga">ga
+<span class="cinf">43%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=id" hreflang="id">id
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=it" hreflang="it">it
+<span class="cinf">43%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=ja" hreflang="ja">ja
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=ko" hreflang="ko">ko
+<span class="cinf">61%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=nl" hreflang="nl">nl
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=pl" hreflang="pl">pl
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=pt" hreflang="pt">pt
+<span class="cinf">99%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=ru" hreflang="ru">ru
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=sv" hreflang="sv">sv
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=tr" hreflang="tr">tr
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=vi" hreflang="vi">vi
+<span class="cinf">79%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=zh" hreflang="zh">zh
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/maps?langSwitch=zh-tw" hreflang="zh-tw">zh-tw
+<span class="cinf">77%</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/jezevec10/jstris-multilang"><em>Update translation</em></a>
+</li>
+</ul>
+</li>
+<li><a href="/jstris/login">Login</a></li>
+<li><a href="/jstris/register">Register</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="btn-group">
+<a href="/jstris/#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+Recommended
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="/jstris/maps?display=1">Recommended</a></li>
+<li><a href="/jstris/maps?display=2">Featured</a></li>
+<li><a href="/jstris/maps?display=3">Newest</a></li>
+<li><a href="/jstris/maps?display=4">The most votes</a></li>
+</ul>
+</div>
+<a href="/jstris/javascript:void(0)" class="btn btn-default" id="search-btn">
+<img src="/jstris//res/search.png" alt="Search" height="16">
+</a>
+<div class="pull-right">
+<div class="btn-group">
+<a class="btn btn-info" href="/jstris/maps/create"><img class="btnIcon" src="/jstris//res/svg/white/plus.svg"> Create new</a>
+</div>
+</div>
+<form method="GET" style="margin-top:13px; display: none;" id="search-form">
+<div class="form-group">
+<div class="input-group">
+<input id="searchBox" class="form-control input-sm" placeholder="Search by name, description, rule:PC, rule:static or myvotes" type="text" name="search" value="">
+<span class="input-group-btn">
+<button class="btn btn-default btn-sm" type="submit">Search</button>
+</span>
+</div>
+</div>
+</form>
+<table class="table table-striped table-hover maps">
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>Description</th>
+<th>Author</th>
+<th>Rules</th>
+<th>Play</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="vote" data-id="56938" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">2</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56938">
+Reflection stairs
+</a></b>
+</td>
+<td class="descr">
+A lil easier than last time lol
+</td>
+<td>
+<a href="/jstris/u/GunterPenguin/maps">GunterPenguin</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56938">
+<div class="mapPreview" data-map="AAAAAAAwAAAAAGMAAAAAZjAAAABmYwAAAGZmMAAAZmZjAABmZmYwAGZmZmMAZmZmZjBmZmZmY4iIiIiFiIiIiFCIiIiFAIiIiFAAiIiFAACIiFAAAIiFAAAAiFAAAACFAAAAAA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56943" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">0</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56943">
+The Chamber
+</a></b>
+</td>
+<td class="descr">
+180-spin or 𝔇 ℑ 𝔈 ~
+</td>
+<td>
+<a href="/jstris/u/Tetrimino777/maps">Tetrimino777</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">Static queue</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56943">
+<div class="mapPreview" data-map="IAAAAAgAAGAACAIgACAIAAZmAAgAAAACKAAABgAIAgAAAAgAAGZgCAAiAAAIBgAAAAAAAAAAAGZiAAAAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIiIgA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56899" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">8</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56899">
+Tetris in tetris
+</a></b>
+</td>
+<td class="descr">
+Just a little game (Play my another maps)
+</td>
+<td>
+<a href="/jstris/u/Sunrise2010/maps">Sunrise2010</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56899">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIgAgAABCACAABEIAIAAEAgAgAAACACAAAAIAIAAAAgAgAAACACAUAAIAIBQAGgAgFMwaACAUzZoAIiIiIgA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56898" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">4</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56898">
+cool pcs
+</a></b>
+</td>
+<td class="descr">
+cool perfect clears
+</td>
+<td>
+<a href="/jstris/u/BunnyBoing/maps">BunnyBoing</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">Static queue</span></li>
+<li><span class="label label-primary">PC finish</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56898">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmIgAAAGMyAAAAYzIAAABVVWZlEQAAM2VxEAAzJXdEACIldEAAAAZmMzMFVVYzMw=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56894" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">4</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56894">
+Clickbait Arrow
+</a></b>
+</td>
+<td class="descr">
+To get into the Jstris map algorithm
+</td>
+<td>
+<a href="/jstris/u/Aerio/maps">Aerio</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56894">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAFAAAAAAUAEQAABQERAAAFARAAAAABEAAAAAERABEAABEQEQAAARERAAAAEREAABEREQAAERERAAAAAAAAAAAAAAARVVVmYHEWZjNgd0R2MyB0R3ciIA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56923" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">-3</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56923">
+A luck test.
+</a></b>
+</td>
+<td class="descr">
+Just spam the button that restarts the game until you get the right blocks!
+This is put in PC finish because I want you to complete it the way I intended it to.
+</td>
+<td>
+<a href="/jstris/u/RBLX/maps">RBLX</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">PC finish</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56923">
+<div class="mapPreview" data-map="AAAAAABVUAAFVWBmZmZmcAB3d3cRERAAASIAIiIiMAMzMABERAREQFUFAAVVZgZmZgB3BwB3ABEBABERAiIiICIDMzAAMwQAREREBQBVVVVmZmZmAHdwAHdwEREQERAAACIiIg=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56900" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">-1</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56900">
+Luck figures
+</a></b>
+</td>
+<td class="descr">
+Just F4 and wait your combunation
+</td>
+<td>
+<a href="/jstris/u/Sunrise2010/maps">Sunrise2010</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56900">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQERAAABAAEREQEREQARARAREAEBEAAREREBEQAAEAEBERERAQAQAREREBABEBEBEREAAQABAREREREBAAEAEQEQERABAQ=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56895" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">1</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56895">
+butterfly
+</a></b>
+</td>
+<td class="descr">
+The desc field is required.
+</td>
+<td>
+<a href="/jstris/u/Tetrimino777/maps">Tetrimino777</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56895">
+<div class="mapPreview" data-map="iAAAAIiAgAAICAiAAAiAAAiAgAAAAAAAAAAAAAAAAAgIgAAIgAAIgICAAAgIiAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzAAAAMzMAAAAzgRAABEiIEQBEiA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56885" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">1</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56885">
+All Clear Puzzle 7
+</a></b>
+</td>
+<td class="descr">
+Impossible. Trust me.
+</td>
+<td>
+<a href="/jstris/u/WindowzYoshi/maps">WindowzYoshi</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">Static queue</span></li>
+<li><span class="label label-primary">PC finish</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56885">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAIiIAACIiIAAAIiIiAAIiIgAAIiIiIgACIiIgAAACA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56862" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">2</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56862">
+Red Skies
+</a></b>
+</td>
+<td class="descr">
+what it&#039;s like to be on Venus (i guess)
+</td>
+<td>
+<a href="/jstris/u/TrueBulge/maps">TrueBulge</a>
+</td>
+ <td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56862">
+<div class="mapPreview" data-map="AAAAAAABERAAAAERERAAAAAAAAAAAAAAAAABEREAAAEREQAAARAAAAAAAAAAEREAAAAREQAAAAAAAAAAAAABEQAAARERAAABEREAAAAAAAAAEQAAAAEREQAAERERAAAAAAAAAA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56858" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">3</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56858">
+rocket nice
+</a></b>
+</td>
+<td class="descr">
+uhuu duru
+</td>
+<td>
+<a href="/jstris/u/p%C3%A3o-de-queijo/maps">pão-de-queijo</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56858">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAABYUAAAAFNYiIAAWFAIgABTUAiAAFhYiIAAU1AIgABYUAiAAFNQCIAFWFUIgAVVVQiAAFVQCIAA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56855" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">3</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56855">
+vulcan
+</a></b>
+</td>
+<td class="descr">
+its just a cool vulcan
+</td>
+<td>
+<a href="/jstris/u/p%C3%A3o-de-queijo/maps">pão-de-queijo</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56855">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAQAQAAABABAAAAEAEAAAEAABAAATMzEAATMzMxATMzMzMQ=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56859" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">2</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56859">
+good job
+</a></b>
+</td>
+<td class="descr">
+likes its black fridyley
+</td>
+<td>
+<a href="/jstris/u/P%C3%83O-DE-SAL/maps">PÃO-DE-SAL</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">PC finish</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56859">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAARAAAAAiIgAAAzMzMABEREREBQVVVQVXdwd3d3AAAAAAAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56842" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">6</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56842">
+무지개떡같은
+</a></b>
+</td>
+<td class="descr">
+뭐. 어쩌라거
+</td>
+<td>
+<a href="/jstris/u/madi0813/maps">madi0813</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56842">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd3d3d3B3d3d3cGZmZmZgZmZmZmBVVVVVUFVVVVVQREREREBEREREQDMzMzMwMzMzMzAiIiIiICIiIiIgERERERAREREREA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56860" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">1</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56860">
+not good job
+</a></b>
+</td>
+<td class="descr">
+kekekekek
+</td>
+<td>
+<a href="/jstris/u/P%C3%83O-DE-SAL/maps">PÃO-DE-SAL</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">PC finish</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56860">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAiIiAiIiIiIiIDMzMiICIiIkREQgIiIiAiZmZ3d3AiIg=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56811" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">10</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56811">
+Christmas Tree!
+</a></b>
+</td>
+<td class="descr">
+Merry Christmas!
+</td>
+<td>
+<a href="/jstris/u/GooseWithKnife/maps">GooseWithKnife</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56811">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAMwAAAAMzMAAAADMAAAADQTAAAAREQAAAQUQUAAAARAAAAAQUQAAAFERBAAAARAAAAERBRAAEQUREQAAARAAAABREQQAEREFEQEQUREREAAAiAAAAACIAAA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56815" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">0</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56815">
+t스핀
+</a></b>
+</td>
+<td class="descr">
+t스핀 연습용
+</td>
+<td>
+<a href="/jstris/u/%EC%95%BC%EC%98%B9%EC%9D%B4%EB%9D%BC%EA%B3%A0/maps">야옹이라고</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56815">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAzEUAAADMSIACIiIiAAIiIiIgIiIiIiIiIiIiA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56790" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">3</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56790">
+Washing machine 2.0
+</a></b>
+</td>
+<td class="descr">
+Its basically a bigger washing machine. Same mechanics, better look!
+</td>
+<td>
+<a href="/jstris/u/RBLX/maps">RBLX</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">Static queue</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56790">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIAACIiFgiAIzEWCIBjMWYAAGZg=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56784" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">2</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56784">
+HELLO KITTY
+</a></b>
+</td>
+<td class="descr">
+&lt;3 just hello kitty, wish I had more room lol
+</td>
+<td>
+<a href="/jstris/u/Amyloo/maps">Amyloo</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-default">Default</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56784">
+<div class="mapPreview" data-map="AAAAAAAAAAAAAAAAAAAAAAiAiIAAh3hVWIh3eIWHWHiHeHdYd4d4h1WIWIeHVVVVh3hVVVVYhVVVVVVYVVVVBVVVM1UFWFVVVVVVVVVVVVhVVVVVgFVVVVWAVVVViACIiIgAAA=="></div>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="vote" data-id="56760" data-vote="0">
+<a class="up" href="/jstris/"></a>
+<span class="count">2</span>
+<a class="down" href="/jstris/"></a>
+</div>
+</td>
+<td><b>
+<a href="/jstris/map/56760">
+o.o
+</a></b>
+</td>
+<td class="descr">
+o.o.o.o
+</td>
+<td>
+<a href="/jstris/u/kyle090512/maps">kyle090512</a>
+</td>
+<td>
+<ul class="ruleLabels">
+<li><span class="label label-primary">Static queue</span></li>
+</ul> </td>
+<td>
+<a href="/jstris/play/map/56760">
+<div class="mapPreview" data-map="AAAAAAAzMwAzMzMzADMzADMzMzMAMzMzMzMzMzMAMzMzMwAwAzMzMzADMzMzMzMAMzMzMwAzMzMzMzMAMzMzMwAzMzMzMzMzADMzMzMAMzMAMzMzMwAzMzMzMzMzMwAzMzMzAA=="></div>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+<center><ul class="pagination" role="navigation">
+<li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+<span class="page-link" aria-hidden="true">&lsaquo;</span>
+</li>
+<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=2">2</a></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=3">3</a></li>
+ <li class="page-item"><a class="page-link" href="/jstris/maps?page=4">4</a></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=5">5</a></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=6">6</a></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=7">7</a></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=8">8</a></li>
+<li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=756">756</a></li>
+<li class="page-item"><a class="page-link" href="/jstris/maps?page=757">757</a></li>
+<li class="page-item">
+<a class="page-link" href="/jstris/maps?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+</li>
+</ul>
+</center>
+</div>
+</div>
+</body>
+</html>

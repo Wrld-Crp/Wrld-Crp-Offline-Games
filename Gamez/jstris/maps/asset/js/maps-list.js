@@ -1,0 +1,1 @@
+window.addEventListener("load",(function(){for(var e=document.getElementsByClassName("mapPreview"),t=0;t<e.length;t++){(new Map).mapPreview(e[t])}var n=function(){document.getElementById("search-form").style.display="block"},a=document.getElementById("searchBox");a&&a.value.length>0&&n();var d=document.getElementById("search-btn");d&&d.addEventListener("click",n)}));

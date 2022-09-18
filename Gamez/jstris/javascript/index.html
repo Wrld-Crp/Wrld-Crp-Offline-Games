@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="">
+    <title>Jstris</title>
+    <link media="all" rel="stylesheet" href="asset/css/main.css">
+    <link rel="shortcut icon" href="/images/nklogo-icon.ico">
+    <meta name="description" content="Online multiplayer puzzle game">
+    <script>window.Laravel = {"csrfToken":null}</script>
+    <script defer src="asset/js/app.js"></script>
+    <script async src="asset/js/ga.js"></script>
+</head>
+<body>
+<div id="app">
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+<span class="sr-only">Toggle Navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/jstristest">
+Jstris
+</a>
+</div>
+<div class="collapse navbar-collapse" id="app-navbar-collapse">
+<ul class="nav navbar-nav" id="mnav">
+<li class="dropdown">
+<a href="/jstristest/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Play <span class="caret"></span></a>
+<ul class="dropdown-menu plLinks" role="menu">
+<li><a href="/jstristest//">Live</a></li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstristest//play/sprint" id="plH">Sprint</a>
+<ul class="dropdown-menu">
+<li><a id="pl2" href="/jstristest//play/sprint/20">20L</a></li>
+<li><a id="pl3" href="/jstristest//play/sprint/40">40L</a></li>
+<li><a id="pl4" href="/jstristest//play/sprint/100">100L</a></li>
+<li><a id="pl5" href="/jstristest//play/sprint/1000">1000L</a></li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstristest//play/cheeseRace" id="plI">Cheese race</a>
+<ul class="dropdown-menu">
+<li><a id="pl6" href="/jstristest//play/cheeseRace/10">10L</a></li>
+<li><a id="pl7" href="/jstristest//play/cheeseRace/18">18L</a></li>
+<li><a id="pl8" href="/jstristest//play/cheeseRace/100">100L</a></li>
+</ul>
+</li>
+<li><a href="/jstristest/maps">Map downstack</a></li>
+<li><a id="pl9" href="/jstristest//play/survival">Survival</a></li>
+<li><a id="plA" href="/jstristest//play/ultra">Ultra</a></li>
+<li><a id="plB" href="/jstristest//play/20TSD">20TSD</a></li>
+<li><a id="plC" href="/jstristest//play/PC">PC Mode</a></li>
+<li><a id="plD" href="/jstristest//play/practice">Practice</a></li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstristest/#">Rulesets</a>
+<ul class="dropdown-menu">
+<li><a id="plE" href="/jstristest//play/big">Big mode</a></li>
+<li><a id="plF" href="/jstristest//play/pentomino">Pentomino</a></li>
+<li><a id="plG" href="/jstristest//play/MPH">MPH</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="/jstristest/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Leaderboard <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class=""><a href="/jstristest/sprint">Sprint</a></li>
+<li class=""><a href="/jstristest/cheese">Cheese race</a></li>
+<li class=""><a href="/jstristest/survival">Survival</a></li>
+<li class=""><a href="/jstristest/ultra">Ultra</a></li>
+<li class=""><a href="/jstristest/20TSD">20TSD</a></li>
+<li class=""><a href="/jstristest/PC-mode">PC Mode</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="/jstristest/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class=""><a href="/jstristest/maps">Browse</a></li>
+<li><a href="/jstristest/maps/random">Random map</a></li>
+<li class=""><a href="/jstristest/maps/create">Map Designer</a></li>
+<li class=""><a href="/jstristest/maps/games">Latest games</a></li>
+<li class=""><a href="/jstristest/maps/leaderboard">Leaderboard</a></li>
+</ul>
+</li>
+<li class="">
+<a href="/jstristest/about">About</a>
+</li>
+<li class="">
+<a href="/jstristest/donate">Donate</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="/jstristest/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+en <span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=en" hreflang="en">en
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=cs" hreflang="cs">cs
+<span class="cinf">78%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=da" hreflang="da">da
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=de" hreflang="de">de
+<span class="cinf">79%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=es" hreflang="es">es
+<span class="cinf">99%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=fi" hreflang="fi">fi
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=fr" hreflang="fr">fr
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=ga" hreflang="ga">ga
+<span class="cinf">43%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=id" hreflang="id">id
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=it" hreflang="it">it
+<span class="cinf">43%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=ja" hreflang="ja">ja
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=ko" hreflang="ko">ko
+<span class="cinf">61%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=nl" hreflang="nl">nl
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=pl" hreflang="pl">pl
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=pt" hreflang="pt">pt
+<span class="cinf">99%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=ru" hreflang="ru">ru
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=sv" hreflang="sv">sv
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=tr" hreflang="tr">tr
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=vi" hreflang="vi">vi
+<span class="cinf">79%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=zh" hreflang="zh">zh
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstristest/javascript:void(0)?langSwitch=zh-tw" hreflang="zh-tw">zh-tw
+<span class="cinf">77%</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/jezevec10/jstris-multilang"><em>Update translation</em></a>
+</li>
+</ul>
+</li>
+<li><a href="/jstristest/login">Login</a></li>
+<li><a href="/jstristest/register">Register</a></li>
+</ul>
+ </div>
+</div>
+</nav>
+<div class="container">
+<div class="jumbotron">
+<h1>Not found.</h1>
+<p>Requested link is invalid.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="aMyJ99UPuqQ03TX7hl2DqtMQwmFsZy6BaKgkmGHV">
+    <title>Jstris | About</title>
+    <link media="all" rel="stylesheet" href="asset/css/main.css">
+    <link rel="shortcut icon" href="../../images/nklogo-icon.ico">
+    <meta name="description" content="About the game, Version information, Links, Contact, Guide">
+    <script>window.Laravel = {"csrfToken":"aMyJ99UPuqQ03TX7hl2DqtMQwmFsZy6BaKgkmGHV"}</script>
+    <script defer src="asset/js/app.js"></script>
+    <script async src="asset/js/ga.js"></script>
+    <script>
+        var monthlyValue = 2;
+        var isPrem = false;
+
+        window.addEventListener("load", function(){
+        $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+    <style>
+        .tooltip.in {
+            opacity: 1 !important;
+        }
+
+        a.u-help {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+<span class="sr-only">Toggle Navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/jstris">
+jstris.jezevec10.com offline
+</a>
+</div>
+<div class="collapse navbar-collapse" id="app-navbar-collapse">
+<ul class="nav navbar-nav" id="mnav">
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Play <span class="caret"></span></a>
+<ul class="dropdown-menu plLinks" role="menu">
+<li><a href="/jstris//">Live</a></li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstris//play/sprint" id="plH">Sprint</a>
+<ul class="dropdown-menu">
+<li><a id="pl2" href="/jstris//play/sprint/20">20L</a></li>
+<li><a id="pl3" href="/jstris//play/sprint/40">40L</a></li>
+<li><a id="pl4" href="/jstris//play/sprint/100">100L</a></li>
+<li><a id="pl5" href="/jstris//play/sprint/1000">1000L</a></li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="/jstris//play/cheeseRace" id="plI">Cheese race</a>
+<ul class="dropdown-menu">
+<li><a id="pl6" href="/jstris//play/cheeseRace/10">10L</a></li>
+<li><a id="pl7" href="/jstris//play/cheeseRace/18">18L</a></li>
+<li><a id="pl8" href="/jstris//play/cheeseRace/100">100L</a></li>
+</ul>
+</li>
+<li><a href="/jstris/maps">Map downstack</a></li>
+<li><a id="pl9" href="/jstris//play/survival">Survival</a></li>
+<li><a id="plA" href="/jstris//play/ultra">Ultra</a></li>
+<li><a id="plB" href="/jstris//play/20TSD">20TSD</a></li>
+<li><a id="plC" href="/jstris//play/PC">PC Mode</a></li>
+ <li><a id="plD" href="/jstris//play/practice">Practice</a></li>
+<li class="dropdown-submenu">
+<a tabindex="-1" href="javascript:void(0)">Rulesets</a>
+<ul class="dropdown-menu">
+<li><a id="plE" href="/jstris//play/big">Big mode</a></li>
+<li><a id="plF" href="/jstris//play/pentomino">Pentomino</a></li>
+<li><a id="plG" href="/jstris//play/MPH">MPH</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Leaderboard <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class=""><a href="/jstris/sprint">Sprint</a></li>
+<li class=""><a href="/jstris/cheese">Cheese race</a></li>
+<li class=""><a href="/jstris/survival">Survival</a></li>
+<li class=""><a href="/jstris/ultra">Ultra</a></li>
+<li class=""><a href="/jstris/20TSD">20TSD</a></li>
+<li class=""><a href="/jstris/PC-mode">PC Mode</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class=""><a href="/jstris/maps">Browse</a></li>
+<li><a href="/jstris/maps/random">Random map</a></li>
+<li class=""><a href="/jstris/maps/create">Map Designer</a></li>
+<li class=""><a href="/jstris/maps/games">Latest games</a></li>
+<li class=""><a href="/jstris/maps/leaderboard">Leaderboard</a></li>
+</ul>
+</li>
+<li class="active">
+<a href="/jstris/about">About</a>
+</li>
+<li class="">
+<a href="/jstris/donate">Donate</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+en <span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/jstris/about?langSwitch=en" hreflang="en">en
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=cs" hreflang="cs">cs
+<span class="cinf">78%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=da" hreflang="da">da
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=de" hreflang="de">de
+<span class="cinf">79%</span>
+ </a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=es" hreflang="es">es
+<span class="cinf">99%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=fi" hreflang="fi">fi
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=fr" hreflang="fr">fr
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=ga" hreflang="ga">ga
+<span class="cinf">43%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=id" hreflang="id">id
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=it" hreflang="it">it
+<span class="cinf">43%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=ja" hreflang="ja">ja
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=ko" hreflang="ko">ko
+<span class="cinf">61%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=nl" hreflang="nl">nl
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=pl" hreflang="pl">pl
+<span class="cinf">52%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=pt" hreflang="pt">pt
+<span class="cinf">99%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=ru" hreflang="ru">ru
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=sv" hreflang="sv">sv
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=tr" hreflang="tr">tr
+<span class="cinf">81%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=vi" hreflang="vi">vi
+<span class="cinf">79%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=zh" hreflang="zh">zh
+<span class="cinf">100%</span>
+</a>
+</li>
+<li>
+<a href="/jstris/about?langSwitch=zh-tw" hreflang="zh-tw">zh-tw
+<span class="cinf">77%</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/jezevec10/jstris-multilang"><em>Update translation</em></a>
+</li>
+</ul>
+</li>
+<li><a href="/jstris/login">Login</a></li>
+<li><a href="/jstris/register">Register</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container">
+<article class="markdown-body entry-content" itemprop="text" id="grip-content">
+<h1>About</h1>
+<p>Welcome to Jstris, a simple online multiplayer block game. Jstris is known for its fast gameplay and is attracting talented players from all around the world. This guide will introduce you to the basic features of the game. Jstris is a simple online multiplayer block game built in Javascript, HTML5 and Python (server).</p>
+</article>
+<div class="row" style="margin-top: 3em">
+<div class="col-md-5">
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="./index.html#overview">Overview</a></li>
+<li><a href="./index.html#controls">Controls</a></li>
+<li>
+<a href="./index.html#multiplayer">Multiplayer</a>
+<ul>
+<li><a href="./index.html#default-room">Default Room</a></li>
+<li><a href="./index.html#bot-room">Bot Room</a></li>
+<li><a href="./index.html#1v1-room">1v1 Room</a></li>
+<li><a href="./index.html#slow-room">Slow Room</a></li>
+<li><a href="./index.html#map-room">Map Room</a></li>
+</ul>
+</li>
+<li>
+<a href="./index.html#singleplayer">Singleplayer</a>
+<ul>
+<li><a href="./index.html#sprint">Sprint</a></li>
+<li><a href="./index.html#cheese-race">Cheese Race</a></li>
+<li><a href="./index.html#ultra">Ultra</a></li>
+<li><a href="./index.html#survival">Survival</a></li>
+<li><a href="./index.html#maps">Maps</a></li>
+<li><a href="./index.html#20tsd">20TSD</a></li>
+</ul>
+</li>
+<li>
+<a href="./index.html#configuration">Configuration</a>
+<ul>
+<li><a href="./index.html#attack-and-combo-table">Attack and Combo table</a></li>
+<li><a href="./index.html#garbage-distribution">Garbage Distribution</a></li>
+<li><a href="./index.html#garbage-blocking">Garbage Blocking</a></li>
+<li><a href="./index.html#blocks">Blocks</a></li>
+<li><a href="./index.html#randomizer">Randomizer</a></li>
+<li><a href="./index.html#previews">Previews</a></li>
+<li><a href="./index.html#solid-garbage">Solid Garbage</a></li>
+<li><a href="./index.html#lock-delay">Lock Delay</a></li>
+<li><a href="./index.html#clear-delay">Clear Delay</a></li>
+<li><a href="./index.html#gravity-lvl">Gravity lvl</a></li>
+<li><a href="./index.html#garbage-delay">Garbage Delay</a></li>
+<li><a href="./index.html#messiness">Messiness</a></li>
+<li><a href="./index.html#configuration-presets">Configuration presets</a></li>
+<li><a href="./index.html#mode">Mode</a></li>
+</ul>
+</li>
+<li>
+<a href="./index.html#faq">Frequently Asked Questions</a>
+<ul>
+<li><a href="./index.html#q-can-i-add-a-bot-to-my-private-or-custom-room">Q: Can I add a bot to my private or custom room?</a></li>
+<li><a href="./index.html#q-what-do-those-abbreviations-in-the-game-results-table-mean">Q: What do those abbreviations in the Game Results table mean?</a></li>
+<li><a href="./index.html#q-what-is-das">Q: What is DAS?</a></li>
+<li><a href="./index.html#q-what-is-arr">Q: What is ARR?</a></li>
+<li><a href="./index.html#q-what-is-finesse">Q: What is finesse?</a></li>
+<li><a href="./index.html#q-can-i-create-a-private-room">Q: Can I create a private room?</a></li>
+<li><a href="./index.html#q-can-i-play-jstris-offline">Q: Can I play Jstris offline?</a></li>
+</ul>
+</li>
+<li><a href="./index.html#additional-information">Additional Information</a></li>
+</ul>
+</div>
+<div class="col-md-7">
+<div class="panel panel-default panel-body">
+<div class="row">
+<div class="col-sm-4">
+<h3>Version</h3>
+<span class="label label-primary" style="font-size:100%">v1.39</span>
+<br><a href="/jstris/about/versions" style="margin-top: 5px;display: block;">Changelog</a>
+</div>
+<div class="col-sm-4 col-xs-6">
+<h3>Discussion</h3>
+<a target="_blank" href="https://discord.gg/RcNFCZC"><img width="130" src="/jstris/res/svg/Discord.svg"></a>
+</div>
+<div class="col-sm-4 col-xs-6">
+<h3>Contact</h3>
+<a target="_blank" href="https://discord.gg/RcNFCZC">Discord</a>
+<br><a href="/jstris//cdn-cgi/l/email-protection#177d6463657e64577d726d7261727426273974787a">E-mail</a>
+</div>
+</div>
+<hr style="margin-bottom:0">
+<div class="row">
+<div class="col-sm-6">
+<h3>Translators</h3>
+<ul>
+<li><b>cs</b> - isametry, jezevec10</li>
+<li><b>da</b> - Klinkboi og Svenne</li>
+<li><b>de</b> - ReTLoM, AnimeBlack, ElectroYan</li>
+<li><b>es</b> - julf, Lucho, Erickmack</li>
+<li><b>fi</b> - ChippiHeppu</li>
+<li><b>fr</b> - Noël Nadal, Aurélien Moisson-Franckhauser, Merevir go</li>
+<li><b>ga</b> - Explo</li>
+<li><b>id</b> - ghalidouga</li>
+<li><b>it</b> - quicksort</li>
+<li><b>ja</b> - k_rakko, MattMayuga, mitsuki0316, ecto0310</li>
+<li><b>ko</b> - Dinir, Eddie, Cosin3, cuxx (turtlebk)</li>
+<li><b>nl</b> - panorrrama</li>
+<li><b>pl</b> - Adul</li>
+<li><b>pt</b> - P1iko, Ovie, kaikecarlos</li>
+<li><b>ru</b> - metallicLurker</li>
+<li><b>sv</b> - Remlej9</li>
+<li><b>tr</b> - Uzay Uysal, Ömercan Kömür(Gadsby)</li>
+<li><b>vi</b> - Shard Nguyễn and TancaVN</li>
+<li><b>zh</b> - teatube, xb2002b</li>
+<li><b>zh-tw</b> - xFly, Helomair, bennxt</li>
+</ul>
+</div>
+<div class="col-sm-6">
+<h3>Moderators</h3>
+<ul>
+<li><a href="/jstris//u/Eddie" target="_blank">Eddie</a></li>
+<li><a href="/jstris//u/jez" target="_blank">jez</a></li>
+</ul>
+<h3>Attribution</h3>
+<ul>
+<li><b>Audio assets</b><br>Dr Ocelot, CC BY 3.0; Yotipo; Chris Butler, CC BY 3.0; <span data-toggle="tooltip" class="u-help" title="Notification sound of incoming private message">spottedstar1123</span>; <span data-toggle="tooltip" class="u-help" title="Professional voice actor, VSFX assets">daliciouss</span></li>
+<li><b>Emoji and name icons</b><br><a href="https://openmoji.org/">OpenMoji</a>, CC BY-SA 4.0</li>
+<li><b>Block skins</b><br>Respective authors &copy; <a href="/jstris//vote/results/2019">2019</a>, <a href="/jstris//vote/results/2020">2020</a></li>
+<li><b>Feature contributions</b><br>
+<span data-toggle="tooltip" class="u-help" title="Emote selection tool, Friend requests layout">Erickmack</span>,
+<span data-toggle="tooltip" class="u-help" title="Custom stats">Oki</span>,
+<a data-toggle="tooltip" class="u-help" title="Discord bot for leaderboard change monitoring" target="_blank" href="https://github.com/bhainesva/jstris-leaderboard-changes">bhainesva</a>
+</li>
+<li><b>Funded by</b><br><a href="/jstris//donate">Jstris Supporters</a></li>
+<li><b>Developed by</b><br>Jezevec10, 2014-2021</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row guide">
+<article>
+<h2>
+<a id="overview" class="anchor" href="./index.html#overview" aria-hidden="true"></a>Overview</h2>
+<p>Jstris uses the same basic mechanics as most other block games. It follows guideline rules. One notable feature is its extensive use of replays. In every single game mode you play in and complete, a replay will be generated for you. Watching and analyzing yourself is an integral part to self-improvement, and Jstris’s replays makes doing that all too easy.</p>
+<p>Unlike other sites, you can be sure Jstris’s Leaderboards are completely clean and cheater-free. Moderators will remove suspicious records to ensure a trusworthy list of global achievements.</p>
+<p>It is possible to play without registering, but in order to use all features of the website, it is recommended to create an account. To do so, click on <em>Register</em> at the top right corner. Only an email, username, and password is required. With an account, you can see a multitude of statistics including your Best Times in singleplayer modes, multiplayer stats, improvement stats, replays, and much more. You can now also see yourself on the Leaderboard (unregistered users’ scores are excluded).</p>
+<p><a href="/jstris/res/img/guide/guide-intro.png" class="intro-img" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/guide-intro.png" class="intro-img" alt="introduction" title="introduction"></a></p>
+<hr>
+<h2>
+<a id="controls" class="anchor" href="./index.html#controls" aria-hidden="true"></a>Controls</h2>
+<p>Jstris allows for players to customize their controls at any time in the <strong>Settings</strong> menu that is located underneath the main play area. Default controls are as follows:</p>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Command</th>
+<th>Default Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move Left</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Move Right</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Soft Drop</td>
+<td>down</td>
+</tr>
+<tr>
+<td>Hard Drop</td>
+<td>space</td>
+</tr>
+<tr>
+<td>Rotate Left</td>
+<td>z</td>
+</tr>
+<tr>
+<td>Rotate right</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Rotate 180</td>
+<td>a</td>
+</tr>
+<tr>
+<td>Hold</td>
+<td>c</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="multiplayer" class="anchor" href="./index.html#multiplayer" aria-hidden="true"></a>Multiplayer</h2>
+<h3>
+<a id="default-room" class="anchor" href="./index.html#default-room" aria-hidden="true"></a>Default Room</h3>
+<p>Upon entering the site, all players are immediately thrown into the <strong>Default Room</strong>, a free-for-all where you'll find players of all skill levels.</p>
+<p>Playing in the Default Room can be tough! What’s unique about Jstris is that it throws humble beginners and world-class opponents together into the mix, along with everyone else between. If you get tired from playing and simply want to watch, then use the command <code>/spectate</code> or <code>/spec</code>. To play again, use the command <code>/play</code>.</p>
+<h3>
+<a id="bot-room" class="anchor" href="./index.html#bot-room" aria-hidden="true"></a>Bot Room</h3>
+<p>The Default Room isn’t the only room there is. To view the full room list, click on <em>Lobby</em> in the bottom left of your playfield. The 2nd most popular room on Jstris is usually the <strong>Bot Room</strong>, so named because of the one Bot that is always present. It is always located in the top left corner of all your opponents, easily distinguishable by its uniform red color.</p>
+<p><a href="/jstris/res/img/guide/image4.png" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/image4.png" alt="MisaMino bot in opponents view" title="MisaMino bot in opponents view"></a></p>
+<p>There are 4 different bots in Jstris. Here they are listed by strength, and the commands to change to that specific one, entered into the textbox.</p>
+<ul>
+<li>MisaMino: <code>/changeBot misamino</code>
+</li>
+<li>Real_Block: <code>/changeBot real</code>
+</li>
+<li>
+<del>jez_Block: <code>/changeBot jez</code></del> (removed on 2018.09.21)</li>
+<li>
+<del>Fool bot: <code>/changeBot fool</code></del> (removed on 2018.09.21)</li>
+</ul>
+<p><em>*Note that all commands must be entered in between games. Any command entered during a game will be nullified.</em></p>
+<p>Misamino is by far the strongest bot, perhaps the strongest block placing bot ever created yet. When paired with the maximum 5 PPS (pieces per second), it becomes a formidable opponent that can easily dismantle the strongest human players in a 1v1. However, bot performance suffers when there are &gt;5 humans in the Bot Room, and it is likely to top out immediately. This brings us to our next command: /botPPS.</p>
+<p>The speed of the bot can be changed. To do this, type in <code>/bot ?</code> only replace the ? with any number between .3 and 5. For example, if I wanted the bot to play at 2 PPS, I would type in <code>/bot 2</code>. If I wanted the bot to play at 1.73 PPS, I would type in <code>/bot 1.73</code>.</p>
+<h3>
+<a id="1v1-room" class="anchor" href="./index.html#1v1-room" aria-hidden="true"></a>1v1 Room</h3>
+<p>The <strong>1v1 Room</strong> room has a maximum of 2 playing users, although anyone is free to come and watch even if it’s full. Use this room to settle differences with your friends or to battle it out with a worthy player. If you’re keeping score, and you want to reset it, type in <code>/resetCounter</code> and all scores will be reset to 0.</p>
+<h3>
+<a id="slow-room" class="anchor" href="./index.html#slow-room" aria-hidden="true"></a>Slow Room</h3>
+<p>Want to play with a friend but the skill level between yourselves is too great? Or you’re just getting started and tired of losing instantly in the pro-dominated Bot Room? Or you want to improve efficiency in your game by taking speed out of the equation? There’s a Slow Room in place for all those occasions. The default Slow Room's speed limit is set at 2.0 PPS, which means a player cannot go over 2.0 PPS. Any attempts to go faster will result in the player’s screen being temporarily locked. In addition to the speed limit, the Slow Room has a line clear delay of 500 milliseconds. That means for each line(s) you clear, you will have to wait 500 ms before you can play again. All Slow Rooms are indicated by the little speedometer icon - <img class="slIc" src="/jstris/res/svg/grey/speedLimit.svg" style="height:13px">. Custom Slow rooms can have any speed limit from 0 PPS to 20 PPS.</p>
+<p><a href="/jstris/res/img/guide/image5.png" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/image5.png" alt="the lobby, where you can join and create rooms" title="the lobby, where you can join and create rooms"></a></p>
+<h3>
+<a id="map-room" class="anchor" href="./index.html#map-room" aria-hidden="true"></a>Map Room</h3>
+<p>The <strong>Map Room</strong> is a place to downstack the fastest through randomly-chosen, user-created maps. The (D=?%) displayed next to each map is the difficulty percentile of the map, with 0% being the easiest and 100% being the hardest. Maps with Perfect Clear Finish requirement are not included among the Maps.</p>
+<hr>
+<h2>
+<a id="singleplayer" class="anchor" href="./index.html#singleplayer" aria-hidden="true"></a>Singleplayer</h2>
+<h3>
+<a id="sprint" class="anchor" href="./index.html#sprint" aria-hidden="true"></a>Sprint</h3>
+<p>The foundation, and with the most simple objective, <strong>Sprint</strong> is the most popular singleplayer mode on Jstris. Clear X amount of lines as fast as you can. Jstris offers 20, 40, 100, and 1000 line Sprint modes.</p>
+<h3>
+<a id="cheese-race" class="anchor" href="./index.html#cheese-race" aria-hidden="true"></a>Cheese Race</h3>
+<p>Less brash and more analytical than Sprint, <strong>Cheese Race</strong> requires more thinking as you downstack through garbage lines in the most efficient way. Jstris offers 10, 18, 100, and infinity line Cheese Race modes.</p>
+<h3>
+<a id="ultra" class="anchor" href="./index.html#ultra" aria-hidden="true"></a>Ultra</h3>
+<p>Score-focused and rewarding advanced techniques such as t-spins and back-to-backs, <strong>Ultra</strong> is a great way to improve your attacking prowess for use in multiplayer.</p>
+<h3>
+<a id="survival" class="anchor" href="./index.html#survival" aria-hidden="true"></a>Survival</h3>
+<p>Quite possibly the most challenging of the singleplayer modes, <strong>Survival</strong> is much like Cheese Race only the garbage rises at a constant rate of one line per second. Survive against the rising lines for as long as you can.</p>
+<h3>
+<a id="maps" class="anchor" href="./index.html#maps" aria-hidden="true"></a>Maps</h3>
+<p>In late 2018, the <strong>Maps</strong> mode was introduced to Jstris. Maps brings an element of creativity while also preparing players to downstack effectively in difficult and unusual positions. Create your own map in the <em>Map Designer</em>. Once published, anyone in the world can play it and compete for the fastest time. There is a limit of 5 published maps per day and 10 unpublished maps in queue. Maps also has a leaderboard. On every map, three medals are given, Gold for 1st place, Silver for 2nd place, and Bronze for 3rd place. Score in the top three of any map to win some medals and secure your place on the leaderboard!</p>
+<p><em>*Note that the Maps leaderboards updates only a few times each day, so new changes are not immediate.</em></p>
+<h3>
+<a id="20tsd" class="anchor" href="./index.html#20tsd" aria-hidden="true"></a>20TSD</h3>
+<p>The goal in this mode is to try to get as many consecutive TSDs (T-spin Double) as you can. If you clear any line that isn't a TSD, the game ends. It is named 20TSD because the original concept was to do a 40 line sprint using nothing but 20 TSDs (20 x 2 = 40). However, some people have gone beyond that and now regularly exceed 20.</p>
+<hr>
+<h2>
+<a id="configuration" class="anchor" href="./index.html#configuration" aria-hidden="true"></a>Configuration</h2>
+<p>To see the configuration of any room on Jstris, use the command <code>/config</code>. Now we will go over each of the settings.</p>
+<h3>
+<a id="attack-and-combo-table" class="anchor" href="./index.html#attack-and-combo-table" aria-hidden="true"></a>Attack and Combo table</h3>
+<p>The default attack and combo table in Jstris (which can be customized in private rooms) is as follows:</p>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">Attack Type</th>
+<th align="right">Lines Sent</th>
+<th></th>
+<th align="right">Combo #</th>
+<th align="right">Lines Sent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0 lines</td>
+<td align="right"><strong>0</strong></td>
+<td></td>
+<td align="right">0</td>
+<td align="right"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="left">1 lines (single)</td>
+<td align="right"><strong>0</strong></td>
+<td></td>
+<td align="right">1</td>
+<td align="right"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="left">2 lines (double)</td>
+<td align="right"><strong>1</strong></td>
+<td></td>
+<td align="right">2</td>
+<td align="right"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="left">3 lines (triple)</td>
+<td align="right"><strong>2</strong></td>
+<td></td>
+<td align="right">3</td>
+<td align="right"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="left">4 lines</td>
+<td align="right"><strong>4</strong></td>
+<td></td>
+<td align="right">4</td>
+<td align="right"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="left">T-spin Double</td>
+<td align="right"><strong>4</strong></td>
+<td></td>
+<td align="right">5</td>
+<td align="right"><strong>2</strong></td>
+</tr>
+<tr>
+<td align="left">T-spin Triple</td>
+<td align="right"><strong>6</strong></td>
+<td></td>
+<td align="right">6</td>
+<td align="right"><strong>2</strong></td>
+</tr>
+<tr>
+<td align="left">T-spin Single</td>
+<td align="right"><strong>2</strong></td>
+<td></td>
+<td align="right">7</td>
+<td align="right"><strong>3</strong></td>
+</tr>
+<tr>
+<td align="left">T-spin Mini Single</td>
+<td align="right"><strong>0</strong></td>
+<td></td>
+<td align="right">8</td>
+<td align="right"><strong>3</strong></td>
+</tr>
+<tr>
+<td align="left">Perfect Clear</td>
+<td align="right"><strong>10</strong></td>
+<td></td>
+<td align="right">9</td>
+<td align="right"><strong>4</strong></td>
+</tr>
+<tr>
+<td align="left">Back-to-Back</td>
+<td align="right"><strong>+1</strong></td>
+<td></td>
+<td align="right">10</td>
+<td align="right"><strong>4</strong></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="right"></td>
+<td></td>
+<td align="right">11</td>
+<td align="right"><strong>4</strong></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="right"></td>
+<td></td>
+<td align="right">12+</td>
+<td align="right"><strong>5</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="garbage-distribution" class="anchor" href="./index.html#garbage-distribution" aria-hidden="true"></a>Garbage Distribution</h3>
+<p>There are 8 different systems in how garbage is sent around during multiplayer matches. They are as follows:</p>
+<ul>
+<li>Targets <code>/set garbage targets</code>
+</li>
+<li>Divide <code>/set garbage divide</code>
+</li>
+<li>To all <code>/set garbage toAll</code>
+</li>
+<li>To least <code>/set garbage toLeast</code>
+</li>
+<li>To most <code>/set garbage toMost</code>
+</li>
+<li>To self <code>/set garbage toSelf</code>
+</li>
+<li>Random <code>/set garbage random</code>
+</li>
+<li>Roulette <code>/set garbage roulette</code>
+</li>
+</ul>
+<p><strong>Targets</strong> is always the default (except in the Team Room) and by far the most popular. In Targets, a target is rotated around every opponent in the room, in equal and fixed increments, and whoever the target was landed on at the moment you send garbage is the one who gets that garbage you sent.</p>
+<p>In the <strong>Divide</strong> garbage distribution system (GDS), any garbage you send is equally divided among all players. For example, in a room with 2 other opponents, if you send a T-spin Double (4 lines), each of your opponents will get 2 lines.</p>
+<p>In the <strong>To all</strong> GDS, any garbage you send is sent to every player in the room. For example, in a room with 4 opponents, if you send a Perfect Clear (10 lines), all 4 opponents will recieve 10 lines each, or a total of 40 lines. As you can surmise from the example, rooms with To all garbage tend to be hectic, with fast rising garbage and characteristically short games.</p>
+<p>In the <strong>To least</strong> GDS, garbage you send is sent to the player who had <em>recieved</em> the least garbage so far. For example, in a room with 3 other opponents, you send 4 lines. Opponent A received 50 lines in the game already at the moment you sent the attack. Opponent B received 53. Opponent C received 58. Because Opponent A received the least lines so far, the 4 lines from your line clear will be sent to him.</p>
+<p>In the <strong>To most</strong> GDS, garbage you send is sent to the player who had <em>sent</em> the most garbage so far. In essence, you are attacking the strongest player in the room.</p>
+<p>In the <strong>To self</strong> GDS, garbage you send is sent to yourself. Impractical in multiplayer, but one might find it helpful to practice with it alone.</p>
+<p>In the <strong>Random</strong> GDS, garbage you send is sent to any random player. Arguably the most fair GDS.</p>
+<p>In the <strong>Roulette</strong> GDS, garbage you send is sent to any random player, <em>including yourself</em>.</p>
+<h3>
+<a id="garbage-blocking" class="anchor" href="./index.html#garbage-blocking" aria-hidden="true"></a>Garbage Blocking</h3>
+<p>There are 4 types of garbage blocking systems on Jstris. They are:</p>
+<ul>
+<li>Full</li>
+<li>Limited</li>
+<li>None</li>
+<li>Instant</li>
+</ul>
+<p><strong>Full</strong> is the default blocking system on Jstris. Other clients that use Full are <em>TF</em> (e+ rooms) and <em>TOP</em>. Under the Full garbage blocking system, incoming garbage appears as a red bar to your right. It doesn’t rise up on your playfield, however, until you place a piece down. The incoming garbage can be reduced with sent lines (such as a 4 lines) and, if you have already started a combo, will pause completely until you finish the combo.</p>
+<p><strong>Limited</strong> blocking system is very similar to Full but with one difference. Incoming garbage is inserted as soon as you drop a piece, regardless of whether a combo was started already or not. In other words, incoming garbage does not pause during combos the way Full does. Like in Full, incoming garbage can be reduced with sent lines. Clients that use Limited include <em>PPT</em> and <em>TB</em> and <em>TF</em> (non e+ rooms).</p>
+<p>In the <strong>None</strong> blocking system, garbage can never be reduced or cancelled. Incoming garbage will first appear as a red bar (like in Full and Limited) and then be inserted into your playfield as soon as you drop a piece. If an opponent sends you 10 lines, even if you clear 4 lines as your next piece, the garbage will not reduce to 6. Instead, you will still recieve 10 lines while sending 4 to your opponent.</p>
+<p>In the <strong>Instant</strong> blocking system, there is no red bar at all. The moment an opponent sends an attack, its garbage will rise up on your field. There is no blocking it.</p>
+<table class="table table-striped">
+<thead>
+<tr>
+<th></th>
+<th align="center">Red bar (queue)</th>
+<th align="center">Blocking?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Limited</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>None</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Instant</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="blocks" class="anchor" href="./index.html#blocks" aria-hidden="true"></a>Blocks</h3>
+<p>There are 8 different types of blocks.</p>
+<ul>
+<li>Standard</li>
+<li>Big</li>
+<li>ARS</li>
+<li>Penta</li>
+<li>M123</li>
+<li>All-29</li>
+<li>C2RS</li>
+<li>O-spin</li>
+</ul>
+<p><strong>Standard</strong> These are the most widely used and basic tetrominoes you are probably most familiar with. These are the default blocks.</p>
+<p><strong>Big</strong> Four times bigger than your standard blocks, these blocks will deal out massive damage when played with.</p>
+<p><strong>ARS</strong> Standard blocks with ARS (Arika rotation system), including CC-check. Implementation by NueSB</p>
+<p><strong>Penta</strong> These blocks are pentominoes. There are 18 unique pentominoes.</p>
+<p><strong>M123</strong> Minos of sizes 1,2,3. There are 4 unique M123 blocks.</p>
+<p><strong>All-29</strong> All minos of sizes 1,2,3,4,5, totaling 29 unique minos. A combination of 7 Standard, 4 M123, and 18 Penta blocks.</p>
+<p><strong>C2RS</strong> Standard blocks with the Cultris 2 rotation system</p>
+<p><strong>O-spin</strong> A meme rotation system where O-spin triple (2xCW) and O-spin quadruple (1xCCW) are possible. Also, other unconventional spins are allowed (due to the kick table which has 15 kick levels as opposed to SRS which has 4).</p>
+<h3>
+<a id="randomizer" class="anchor" href="./index.html#randomizer" aria-hidden="true"></a>Randomizer</h3>
+<p>Randomizers are basically the formula for what and what order blocks you get. Jstris has 11 different randomizers. They are:</p>
+<ul>
+<li>7-bag</li>
+<li>14-bag</li>
+<li>Classic</li>
+<li>C2Sim</li>
+<li>One block</li>
+<li>Two block</li>
+<li>One 7-bag</li>
+<li>One 14-bag</li>
+<li>Repeat+7b</li>
+<li>BSblock+7b</li>
+<li>BigBlock+7b</li>
+</ul>
+<p><strong>7-bag</strong> is the standard and default randomizer. Imagine a small bag with 1 each of the 7 different blocks. Now you draw out, one by one, a piece until the bag is empty. Then you get a new bag with again 1 each of the 7 different blocks. Now you draw out one by one once more. Repeat. This is how the 7-bag randomizer works.</p>
+<p><strong>14-bag</strong> is much like 7-bag only the bag is doubled in size, with 2 of each of the 7 blocks. Once again, you draw out each piece from the bag, one by one, until the bag is empty. Rinse and repeat.</p>
+<p><strong>Classic</strong> randomizer gives you completely random pieces. This randomizer makes stacking very challenging.</p>
+<p><strong>C2Sim</strong> A simulation of the Cultris 2 randomizer, described in this <a href="http://harddrop.com/forums/index.php?showtopic=5080&amp;st=0&amp;p=71443&amp;#entry71443" rel="nofollow">post by Integration</a></p>
+<p><strong>One block</strong> This randomizer gives you a randomly selected block is chosen for you at the start and you will get only that specific block for the whole game.</p>
+<p><strong>Two block</strong> This randomizer is like the One Block one, only it alternates between two specific blocks instead.</p>
+<p><strong>One 7-bag</strong> The same bag of 7 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 7 pieces over and over.</p>
+<p><strong>One 14-bag</strong> The same bag of 14 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 14 pieces over and over.</p>
+<p><strong>Repeat+7b</strong> Works like 7-bag, only any piece in the bag has a chance of being repeated anywhere from 1-7 times.</p>
+<p><strong>BSblock+7b</strong> Normal 7-bag, with the exception that pieces from different Block Sets (hence the BS in the name), like pentominoes or Big Blocks, may appear.</p>
+<p><strong>BigBlock+7b</strong> Normal 7-bag, with the exception that Big Blocks may appear.</p>
+<h3>
+<a id="previews" class="anchor" href="./index.html#previews" aria-hidden="true"></a>Previews</h3>
+<p>Jstris has a default of 5 previews. In custom rooms, you can set anywhere from 0 to 5 previews.</p>
+<h3>
+<a id="solid-garbage" class="anchor" href="./index.html#solid-garbage" aria-hidden="true"></a>Solid Garbage</h3>
+<p>Solid garbage are unclearable lines that rise up from the bottom to “hurry up” the game so it doesn’t extend indefinitely. They are slightly darker than normal garbage lines. In the Bot Room, solid garbage by default starts to come after 2 minutes. Solid garbage is also customizable in custom rooms.</p>
+<p><a href="/jstris/res/img/guide/image7.png" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/image7.png" alt="Solid Garbage" title="Solid Garbage"></a></p>
+<h3>
+<a id="lock-delay" class="anchor" href="./index.html#lock-delay" aria-hidden="true"></a>Lock Delay</h3>
+<p>Lock delay refers to how much time a piece can wait on the ground before locking into place. In Jstris, there are three types of lock delays you can customize. The first one, L1, controls how many milliseconds after a piece is softdropped to the ground until it locks. The default L1 delay is 500 milliseconds. The second one, L2, controls how many milliseconds after a piece is softdropped to the ground and is kept in motion by moving left or right until it locks. The default L2 delay is 5000 milliseconds. Note that if a piece is rotated, the L2 is reset and the piece can stay on longer than 5000 milliseconds, which brings us to L3. The third one, L3, is the maximum amount of time a piece that enters the matrix can stay on before it autolocks, no matter what. The default L3 delay is 20000 milliseconds.</p>
+<h3>
+<a id="clear-delay" class="anchor" href="./index.html#clear-delay" aria-hidden="true"></a>Clear Delay</h3>
+<p>Clear delay is a fixed amount of time that passes after you clear any line(s). During this time, you can’t do anything. Many classic block games and PPT use clear delay, but Jstris by default has 0 delay, and for the most part it is never used here. However, it is customizable if you want to turn it on. Its range is 0 milliseconds to 6000 milliseconds.</p>
+<h3>
+<a id="gravity-lvl" class="anchor" href="./index.html#gravity-lvl" aria-hidden="true"></a>Gravity lvl</h3>
+<p>Gravity level refers to the rate at which the pieces fall down the matrix automatically. The Gravity can be adjusted from levels 0-28. The default Gravity is 1. If gravity is 0, the piece will not fall down at all until it is autolocked after the 20 second L3 lock delay (see section Lock Delay). A Gravity level of 28 is equal to 20G, which means pieces will instantly fall from the top to bottom.</p>
+<h3>
+<a id="garbage-delay" class="anchor" href="./index.html#garbage-delay" aria-hidden="true"></a>Garbage Delay</h3>
+<p>Garbage delay is a fixed amount of time between the incoming garbage indicated by the red bar and the insertion of that garbage into the playfield. By default, it is set at 500 milliseconds. It is customizable from a range of 0 milliseconds to 60000 milliseconds. A higher garbage delay allows for more pieces to be played before garbage is inserted, while a lower garbage delay allows for less pieces to be played before garbage insertion. Or in other words, the higher the garbage delay, the more opportunity it gives to block more effectively. Another way to define garbage delay is “the minimumum amount of time an incoming attack has to be visible in the red bar before a placed block can trigger the insertion of that garbage to the playfield.”</p>
+<h3>
+<a id="messiness" class="anchor" href="./index.html#messiness" aria-hidden="true"></a>Messiness</h3>
+<p>Garbage messiness refers to the difficulty level to clear certain types of garbage. To change the messiness of garbage in a room, use the command <code>/set messiness ?</code>, where the ? is replaced with any number from -100 to 100. -100 is the least messy garbage configuration, and the garbage hole will only appear in one column throughout the entirety of the game (left picture). 100 is the most messy garbage configuration and the garbage hole will appear in any of the 10 columns, making it much more difficult to downstack (right picture).</p>
+<p><a href="/jstris/res/img/guide/image10.png" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/image10.png" alt="Unmessy (-100)" title="Unmessy (-100)"></a>
+<a href="/jstris/res/img/guide/image1.png" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/image1.png" alt="Messy (100)" title="Messy (100)"></a></p>
+<h3>
+<a id="configuration-presets" class="anchor" href="./index.html#configuration-presets" aria-hidden="true"></a>Configuration presets</h3>
+<p>If there is a room settings configuration you particularly like and want to easily refer back to, you can save the settings as a preset.</p>
+<p>To do this, go to <em>Lobby</em>, then <em>Create Room</em>, then either the <em>Simple</em> or <em>All</em> tab. Once you have customized the settings to your liking, hit the <em>Save</em> button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on the <a href="/jstris//presets/submit">Submit a preset</a> page.</p>
+<p>Once you’ve submitted the preset, you can view it, along with all other user-submitted presets on the <a href="/jstris//presets">List of presets</a>. Now you can easily recreate the same room without customizing all the settings again. Just go to <em>Create Room</em>, then <em>Use Custom Preset</em>, and enter either the title or ID number of your preset.</p>
+<h3>
+<a id="mode" class="anchor" href="./index.html#mode" aria-hidden="true"></a>Mode</h3>
+<p>There are currently 7 different modes to choose from when creating a new room. They are:</p>
+<ul>
+<li>Standard</li>
+<li>Team</li>
+<li>Cheese</li>
+<li>Live Sprint</li>
+<li>Live Cheese</li>
+<li>Live Survival</li>
+<li>Live Maps v0.1</li>
+</ul>
+<p><strong>Standard</strong> mode is normal multiplayer free-for-all.</p>
+<p><strong>Team</strong> mode creates a custom Team Room. Pick a side, red or blue, and battle and bring glory for your team. To set your own team name, use the command <code>/set teamName ?</code> where the ? is replaced with your team name.</p>
+<p><a href="/jstris/res/img/guide/image11.png" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/image11.png" alt="team game in progress" title="team game in progress"></a></p>
+<p><strong>Cheese</strong> mode creates a Cheese Room. Cheese, also known as garbage, is the primary way to knock out opponents in multiplayer modes. It is an important skill to downstack through cheese. Practice how fast you can downstack in this mode that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command <code>/set height ?</code> , with the question mark representing a number from 1 to 20.</p>
+<p><strong>Live Sprint</strong> mode allows you to play Sprint against an opponent(s). The fastest one to finish the Sprint wins. The room defaults to a 40L Sprint, but you can change to any other type of Sprint with these commands:</p>
+<ul>
+<li>20L: <code>/set gamemode sprint20</code>
+</li>
+<li>40L: <code>/set gamemode sprint40</code>
+</li>
+<li>100L: <code>/set gamemode sprint100</code>
+</li>
+<li>1000L: <code>/set gamemode sprint1000</code>
+</li>
+</ul>
+<p>If you break your Sprint record in Live Sprint, unfortunately you cannot add it to your account because the Sprint will be contained in a Live Replay, not a standard Replay. But you can still save the replay to your favorites if you want to preserve it.</p>
+<p><strong>Live Cheese</strong> mode allows you to play Cheese against an opponent(s). Live Cheese mode is virtually identical to Cheese mode except that you can't customize starting lines beyond the 10L, 18L, and 100L. The room defaults to a 10L Cheese, but you can change to any other type of Cheese with these commands:</p>
+<ul>
+<li>10L: <code>/set gamemode cheese10</code>
+</li>
+<li>18L: <code>/set gamemode cheese18</code>
+</li>
+<li>100L: <code>/set gamemode cheese100</code>
+</li>
+</ul>
+<p><strong>Live Survial</strong> mode allows you to play Survival against an opponent(s). Whoever survives the longest wins.</p>
+<p><strong>Live Maps v0.1</strong> mode creates a custom Map Room. Everything in this room works the same as the Map Room.</p>
+<h2>
+<a id="faq" class="anchor" href="./index.html#faq" aria-hidden="true"></a>FAQ</h2>
+<h3>
+<a id="q-can-i-add-a-bot-to-my-private-or-custom-room" class="anchor" href="./index.html#q-can-i-add-a-bot-to-my-private-or-custom-room" aria-hidden="true"></a>Q: Can I add a bot to my private or custom room?</h3>
+<p>A: No. Currently, we only have one bot on Jstris, which permanently resides in the Bot Room. However, private bots may be a reality in the future.</p>
+<h3>
+<a id="q-what-do-those-abbreviations-in-the-game-results-table-mean" class="anchor" href="./index.html#q-what-do-those-abbreviations-in-the-game-results-table-mean" aria-hidden="true"></a>Q: What do those abbreviations in the Game Results table mean?</h3>
+<p>A: B2B = back-to-back. B2Bpm = back-to-back per minute. APM = attack per minute. SPM = sent per minute. PPS = pieces per second. Rep = replay.</p>
+<p><a href="/jstris/res/img/guide/image9.png" target="_blank" rel="noopener noreferrer"><img src="/jstris/res/img/guide/image9.png" alt="game results table" title="game results table"></a></p>
+<h3>
+<a id="q-what-is-das" class="anchor" href="./index.html#q-what-is-das" aria-hidden="true"></a>Q: What is DAS?</h3>
+<p>A: DAS is a form of horizontal piece sensitivity. DAS stands for delayed auto shift. It controls for how long you have to hold down the left or right keys before the block moves to the direction you want. With a very low DAS, even the lightest touch on a key will immediately send the block moving. With a very high DAS, you will have to hold down the key for longer before the block starts moving. Professionals on average tend to use a lower DAS because the increased sensitivity allows them to play faster. The default DAS on Jstris is 133. If it still feels too sensitive, raise that number until you feel comfortable. If it feels too slow, lower the number. Adjust and find what suits you.</p>
+<h3>
+<a id="q-what-is-arr" class="anchor" href="./index.html#q-what-is-arr" aria-hidden="true"></a>Q: What is ARR?</h3>
+<p>A: ARR is another form of horizontal piece sensitivity. ARR stands for auto repeat rate. It controls for how fast the block moves left or right. This is a little easier to understand than DAS. Quite simply, with a very low ARR, blocks will zoom almost immediately to the direction you want when holding down the left or right keys. With a very high ARR, blocks will move very slowly in the direction you want when holding down the left or right keys. The default ARR on Jstris is 10.</p>
+<h3>
+<a id="q-what-is-finesse" class="anchor" href="./index.html#q-what-is-finesse" aria-hidden="true"></a>Q: What is finesse?</h3>
+<p>A: Finesse is defined as the most efficient way to move a block. Good finesse is important for playing smoother and faster. The number next to finesse denotes how many finesse errors were committed. So a 0 finesse score means you made no finesse errors. Ideally, the closer you get to 0, the better. Finesse is something that needs to be learned in order to know how to do. There are many resources online explaining it. This video is a good starting point: <a href="https://youtu.be/_QBs703nOnk?t=502" rel="nofollow">Tutorial: How to Play Fast!</a>.</p>
+<h3>
+<a id="q-can-i-create-a-private-room" class="anchor" href="./index.html#q-can-i-create-a-private-room" aria-hidden="true"></a>Q: Can I create a private room?</h3>
+<p>A: Yes. Click <em>Lobby</em>, then <em>Create Room</em>, then check the box that says <em>Private</em>. Copy and give the room link to anyone you want to join your private room. Here’s a tip: grab the link of any room, public or private, by using the command <code>/link</code>.</p>
+<h3>
+<a id="q-can-i-play-jstris-offline" class="anchor" href="./index.html#q-can-i-play-jstris-offline" aria-hidden="true"></a>Q: Can I play Jstris offline?</h3>
+<p>A: Yes. In order to play offline, you have to first download Jstris while you are online. To do this, right click on the home page, press "Save as", and download the html file. Note that only single player modes can be played offline, and the scores will not be saved.</p>
+<hr>
+<h2>
+<a id="additional-information" class="anchor" href="./index.html#additional-information" aria-hidden="true"></a>Additional Information</h2>
+<p>Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the <a href="/jstris//about">About</a> section on the website to learn more.</p>
+</article>
+</div>
+<div class="row" style="margin-top:6rem">
+<div class="well well-sm">
+<b>Author:</b> <a href="/jstris//u/Eddie">Eddie</a> & contributors. Feel free to make improvements or suggest changes on <a target="_blank" href="https://github.com/jezevec10/jstris-guide">github.com/jezevec10/jstris-guide</a>. Translations are accepted.<br>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="asset/js/email-decode.min.js"></script></body>
+</html>

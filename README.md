@@ -1,2 +1,3 @@
 # Wrld-Crp-Offline-Games
-To play the games open the .html file (note that not every .html file will work)
+IBoss my beloved :heart:
+(run the index.html file to play the games)

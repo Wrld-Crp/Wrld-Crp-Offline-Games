@@ -1,3 +1,3 @@
 # Wrld-Crp-Offline-Games
-IBoss my beloved :heart:
-(run the index.html file to play the games)
+"IBoss git better blocking" - World Corp Enterprises#5968
+(run the index.html file to play the games, idiots)

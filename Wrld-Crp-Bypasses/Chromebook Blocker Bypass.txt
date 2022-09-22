@@ -1,0 +1,35 @@
+ATTENTION: WILL BE SLOW UNTIL WE FIND A REWORK
+Wrld Crp: github.com/Wrld-Crp
+Tutorial by: Animations#0600
+Original creators: SprinkzMC#8421 , CompactCow#4717
+
+Go to network --> click your wifi --> click The dropdown and click Network again -->
+Click Custom name servers
+
+Imput 129.213.138.223 in all the boxes
+
+Then reset
+
+Copy this
+
+javascript:prompt('Extension IDs here: (guh)').split(',').forEach(i=>{chrome.management.setEnabled(i.trim(),!1)})
+
+Then go to your bookbar and Put that code in the website field and save
+
+Then go to the extention page of the Blocking tool
+ Example --> chrome://extensions/?id=kmffehbidlalibfeklaefnckpidbodff
+
+Copy the part past the id=
+ Example kmffehbidlalibfeklaefnckpidbodff
+
+Then go to a blocked website and click the bookmark
+
+Then enter the id into the field
+
+Wait first load can take awhile
+
+Enjoy.
+
+Wrld Crp: github.com/Wrld-Crp
+Made by: Animations#0600
+Original creators: SprinkzMC#8421 , CompactCow#4717
